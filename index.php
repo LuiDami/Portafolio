@@ -115,15 +115,15 @@
 
                 <div id="proyectos">
                     <article class="proyectos">
-                            <a href="https://www.luisdamian.com/restaurante" target="_blank"><img src="" alt="Proyecto restaurante"></a>
+                        <a href="https://www.luisdamian.com/restaurante" target="_blank"><img src="" alt="Proyecto restaurante"></a>
                     </article>
 
                     <article class=proyectos>
-                    <a href="" target="_blank"><img src="" alt="Otro proyecto 2"></a>
+                        <a href="" target="_blank"><img src="" alt="Otro proyecto 2"></a>
                     </article>
 
                     <article class=proyectos>
-                    <a href="" target="_blank"><img src="" alt="Otro proyecto 3"></a>
+                        <a href="" target="_blank"><img src="" alt="Otro proyecto 3"></a>
                     </article>
                 </div>
                 
@@ -151,26 +151,35 @@
 
                 </article>
             </section>
+            
 
         </div> <!--fin contenedor section + aside-->
 
-        <footer id="footerS"><!--pie de paguina-->
+        <footer ><!--pie de paguina-->
+            <div id="landscape"></div>
+            <div id="footerS">
+                <article>
+                    <h3>telf: +34 662524204</h3>
+                    <h3><a href="mailto:luidami10@gmail.com">email: luidami10@gmail.com</a></h3>
+                    
+                </article>
+                <article>
+                    <h3><a href="https://www.linkedin.com/in/luis-damian-masapanta-paredes-8b60b599/ " target="_blank">linkedin</a></h3>
+                </article>
+            </div>
 
-            <article>
-                <h3>telf: +34 662524204</h3>
-                <h3><a href="mailto:luidami10@gmail.com">email: luidami10@gmail.com</a></h3>
-                
-            </article>
-            <article>
-                <h3><a href="https://www.linkedin.com/in/luis-damian-masapanta-paredes-8b60b599/ " target="_blank">linkedin</a></h3>
-            </article>
             
             
         </footer>
+        
+        
 
         <!--Javascrip-->
         <script>
         </script>
+        
 
      </body> 
+     
  </html>
+ 

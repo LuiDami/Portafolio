@@ -43,9 +43,12 @@ nav ul {
 }
 
 footer {
-    min-height: 10vh;
+    /* min-height: 10vh;
     margin: 0.5vh;
-    padding: 1vh;
+    padding: 1vh; */
+}
+
+#footerS {
     background-color: skyblue;
     display: flex;
     justify-content: space-around;
@@ -56,7 +59,8 @@ footer {
 
 /*contenedor*/
 
-aside {
+
+/* aside { no tenemos aside
     float: left;
     height: 98%;
     width: 20vh;
@@ -64,7 +68,7 @@ aside {
     padding: 1vh;
     padding-top: 0.5vh;
     background-color: skyblue;
-}
+} */
 
 section {
     /* height: 100%;
@@ -119,6 +123,7 @@ article {
 }
 
 #contactar {
+    /**formulario contacto*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -137,8 +142,9 @@ article {
 }
 
 @media screen and (max-width: 1022px) and (orientation: landscape) {
+    /**Pantallas movil horizontal*/
     nav {
-        height: 100vh;
+        height: 95vh;
         width: 15vw;
         margin: 0.5vw;
         padding: 1vw;
@@ -155,12 +161,28 @@ article {
         align-items: center;
         height: 100%;
     }
-    /*probando*/
+    /*ponemos todos a la derecha para que no se pisen*/
     #habilidadS,
     #proyectoS,
     #contactoS,
     #meS {
-        width: 70vw;
+        width: 80vw;
+        float: right;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        width: 100vw;
+    }
+    #footerS {
+        width: 81.5vw;
+        float: right;
+    }
+    #landscape {
+        /**usamos este flag para poder colocar el footer bien en pantallas moviles horizontal*/
+        width: 15vw;
     }
     .habilidades,
     .proyectos,
@@ -172,11 +194,8 @@ article {
     section {
         min-height: 100vh;
     }
-    footer {
-        width: 70vw;
-    }
     .contenedor {
-        float: right;
+        /* float: right; */
     }
     /* footer,
     #proyectoS {
