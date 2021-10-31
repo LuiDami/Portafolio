@@ -42,11 +42,13 @@ nav ul {
     min-height: 100vh;
 }
 
+
+/*
 footer {
-    /* min-height: 10vh;
+     min-height: 10vh;
     margin: 0.5vh;
-    padding: 1vh; */
-}
+    padding: 1vh; 
+}*/
 
 #footerS {
     background-color: skyblue;
@@ -194,9 +196,10 @@ article {
     section {
         min-height: 100vh;
     }
+    /*
     .contenedor {
-        /* float: right; */
-    }
+         float: right; 
+    }*/
     /* footer,
     #proyectoS {
         float: right;
