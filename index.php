@@ -23,10 +23,10 @@
             <h2>Descargar cv</h2>
 
         </header>
-
+        <p id="sobremi"></p>
         <nav>
             <ul>
-                <li><a href="#meS">Sobre mi</a></li>
+                <li><a href="#sobremi">Sobre mi</a></li>
                 <li><a href="#habilidadS">Habilidades</a></li>
                 <li><a href="#proyectoS">Proyectos</a></li>
                 <li><a href="#contactoS">Contacto</a></li>
@@ -61,49 +61,60 @@
                 <h2>Habilidades</h2>
                 <div id="habilidades">
                     <article class="habilidades">
-                        <h3>Front-end</h3>
-                        <lo>
-                            <li>HTML</li>
-                            <li>XML</li>
-                            <li>CSS, Flexbox, Css Grid, animación</li>
-                            <li>Responsive Web Desing</li>
-                            <li>Bootstrap</li>
-                            <li>svg</li>
-                            <li>Javascript</li>
-                            <li>Json</li>
-                            <li>JQuery</li>
-                            <li>Ajax</li>
-                            <li>Programación asíncronas con promesas</li>
-                            <li>canvas</li>
-                            <li>Angular 8</li>
-                        </lo>
+                        <fieldset>
+                            <legend><h3>&nbsp;Front-end&nbsp;</h3></legend>
+                            <lo>
+                                <li>HTML</li>
+                                <li>XML</li>
+                                <li>CSS, Flexbox, Css Grid, animación</li>
+                                <li>Responsive Web Desing</li>
+                                <li>Bootstrap</li>
+                                <li>svg</li>
+                                <li>Javascript</li>
+                                <li>Json</li>
+                                <li>JQuery</li>
+                                <li>Ajax</li>
+                                <li>Programación asíncronas con promesas</li>
+                                <li>canvas</li>
+                                <li>Angular 8</li>
+                            </lo>
+                        </fieldset>
+                        
                     </article>
                     <article class="habilidades">
-                        <h3>Back-end</h3>
-                        <lo>
-                            <li>PHP, POO, MVC</li>
-                            <li>Diseño y gestión de Base de Datos relacionales</li>
-                            <li>SQL</li>
-                            <li>Mysql</li>
-                            <li>Oracle Database</li>
-                            <li>PL/SQL</li>
-                            <li>Servidor Web Apache (Xampp)</li>
-                        </lo>
+                        
+                        <fieldset>
+                            <legend><h3>&nbsp;Back-end&nbsp;</h3></legend>
+                            <lo>
+                                <li>PHP, POO, MVC</li>
+                                <li>Diseño y gestión de Base de Datos relacionales</li>
+                                <li>SQL</li>
+                                <li>Mysql</li>
+                                <li>Oracle Database</li>
+                                <li>PL/SQL</li>
+                                <li>Servidor Web Apache (Xampp)</li>
+                            </lo>
+                        </fieldset>
+                        
                     </article>
                     <article class="habilidades">
-                        <h3>Mas habilidades</h3>
-                        <lo>
-                            <li>Java, POO</li>
-                            <li>Service Workers</li>
-                            <li>Photoshop</li>
-                            <li>GIMP</li>
-                            <li>Davinci resolve</li>
-                            <li>Netbeans</li>
-                            <li>Eclipse</li>
-                            <li>Visual studio code</li>
-                            <li>Git</li>
-                            <li>Gitflow y  ciclo de vida del software</li>
-                        </lo>
+                        
+                        <fieldset>
+                            <legend><h3>&nbsp;Mas habilidades&nbsp;</h3></legend>
+                            <lo>
+                                <li>Java, POO</li>
+                                <li>Service Workers</li>
+                                <li>Photoshop</li>
+                                <li>GIMP</li>
+                                <li>Davinci resolve</li>
+                                <li>Netbeans</li>
+                                <li>Eclipse</li>
+                                <li>Visual studio code</li>
+                                <li>Git</li>
+                                <li>Gitflow y  ciclo de vida del software</li>
+                            </lo>
+                        </fieldset>
+                        
                     </article>
 
                 </div>
@@ -130,11 +141,11 @@
             </section> 
 
             <section id="contactoS"> <!-- Contactame -->
-                <h2>Contacto</h2>
+                
                 <article class="contacto">
                     <form action="" method="post" id="contacto" name="contacto">
                         <fieldset id="contactar">
-                            <legend>Contacto</legend>
+                            <legend><h2>&nbsp;Contacto&nbsp;</h2></legend>
                             <label for="nombre">Nombre</label>
                             <input type="text" name="nombre" id="nombre">
 
@@ -151,6 +162,11 @@
 
                 </article>
             </section>
+
+            <!-- <div class="badge-base LI-profile-badge" data-locale="es_ES" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="luis-damian-developer" data-version="v1">
+                <a class="badge-base__link LI-simple-link" href="https://es.linkedin.com/in/luis-damian-developer?trk=profile-badge">Luis Damian Masapanta Paredes</a>
+            </div> -->
+              
             
 
         </div> <!--fin contenedor section + aside-->
@@ -159,12 +175,24 @@
             <div id="landscape"></div>
             <div id="footerS">
                 <article>
-                    <h3>telf: +34 662524204</h3>
-                    <h3><a href="mailto:luidami10@gmail.com">email: luidami10@gmail.com</a></h3>
-                    
+                    <h3><a href="tel:+34662524204">telf: +34 662524204</a></h3>
                 </article>
+
                 <article>
-                    <h3><a href="https://www.linkedin.com/in/luis-damian-masapanta-paredes-8b60b599/ " target="_blank">linkedin</a></h3>
+                    <h3><a href="https://api.whatsapp.com/send?phone=+34662524204" target="_blank">Contacta por WhatsApp</a></h3>
+                </article>
+
+                <article>
+                    <h3><a href="mailto:luidami10@gmail.com">email: luidami10@gmail.com</a></h3>
+                </article>
+
+                <article>
+                    <h3><a href="https://www.linkedin.com/in/luis-damian-developer/" 
+                    target="_blank">linkedin</a></h3>
+                </article>
+
+                <article>
+                    <h3><a href="https://github.com/LuiDami" target="_blank">github</a></h3>
                 </article>
             </div>
 
