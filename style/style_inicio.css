@@ -5,6 +5,10 @@
     box-sizing: content-box;
 }
 
+html {
+    font-size: 2vh;
+}
+
 
 /*Estructura principal*/
 
@@ -145,6 +149,9 @@ article {
 
 @media screen and (max-width: 1022px) and (orientation: landscape) {
     /**Pantallas movil horizontal*/
+    html {
+        font-size: 2.1vw;
+    }
     nav {
         height: 95vh;
         width: 15vw;
@@ -153,7 +160,7 @@ article {
         text-align: center;
         position: -webkit-sticky;
         position: sticky;
-        top: 0;
+        top: 1vh;
         float: left;
     }
     nav ul {
@@ -163,7 +170,7 @@ article {
         align-items: center;
         height: 100%;
     }
-    /*ponemos todos a la derecha para que no se pisen*/
+    /*ponemos todos los section a la derecha para que no se pisen*/
     #habilidadS,
     #proyectoS,
     #contactoS,
@@ -207,6 +214,10 @@ article {
 }
 
 @media screen and (min-width: 1023px) {
+    /**moviles y tablets vertical*/
+    html {
+        font-size: 2.5vh;
+    }
     .habilidades,
     .proyectos {
         width: 40vw;
@@ -226,6 +237,10 @@ article {
 }
 
 @media screen and (min-width: 1400px) {
+    /**portatiles y pantallas grandes*/
+    html {
+        font-size: 2.5vh;
+    }
     .habilidades,
     .proyectos {
         width: 30vw;
