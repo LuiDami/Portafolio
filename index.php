@@ -14,13 +14,17 @@
 
         <header>
 
-            <h1>Hola soy Luis Damian,</h1>
-            <h1>Desarrollador Web</h1>
-            <p>Front-End y Back-End</p>
-            <a href="#contactoS">
-                <h2>CONTÁCTAME</h2>
-            </a>
-            <h2>Descargar cv</h2>
+            <div><h1 id="namehead">Hola soy Luis Damian</h1></div>
+            <div><h1 id="professionhead">Desarrollador Web</h1></div>
+            <div><p id="developer">Front-End y Back-End</p></div>
+            <div>
+                <a id="contachead" href="#contactoS">
+                    <h2>CONTÁCTAME</h2>
+                </a>
+            </div>
+            <div><h2 id="descargarcv">Descargar cv</h2></div>
+            
+            
 
         </header>
         <p id="sobremi"></p>

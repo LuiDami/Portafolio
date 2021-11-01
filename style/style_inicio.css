@@ -43,6 +43,8 @@ header {
     align-items: center;
     color: var(--header_letras);
     border: 3px solid var(--header_letras);
+    /* box-shadow: var(--header_letras) 200px 200px 200px; */
+    background: radial-gradient(#ffffff, #acc8e9, var(--header_letras));
 }
 
 header a {
@@ -196,6 +198,117 @@ article {
     min-height: 67vh;
 }
 
+
+/*animaciones**/
+
+#namehead {
+    position: relative;
+    animation-name: namehead;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#professionhead {
+    position: relative;
+    animation-name: professionhead;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+#developer {
+    position: relative;
+    animation-name: developer;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    color: #2c5c9700;
+}
+
+#contachead {
+    position: relative;
+    animation-name: contachead;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    color: #2c5c9700;
+}
+
+#descargarcv {
+    position: relative;
+    animation-name: descargarcv;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+    color: #2c5c9700;
+}
+
+@keyframes namehead {
+    from {
+        left: -200px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes professionhead {
+    from {
+        left: +200px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes developer {
+    from {
+        color: #2c5c9700;
+    }
+    to {
+        color: #2c5c97;
+    }
+}
+
+@keyframes contachead {
+    from {
+        top: +200px;
+        color: #2c5c97;
+    }
+    to {
+        top: 0px;
+        color: #2c5c97;
+    }
+}
+
+@keyframes descargarcv {
+    from {
+        top: +200px;
+        color: #2c5c97;
+    }
+    to {
+        top: 0px;
+        color: #2c5c97;
+    }
+}
+
+@media screen and (max-width: 1022px) and (orientation: portrait) {
+    @keyframes namehead {
+        from {
+            top: -200px;
+        }
+        to {
+            top: 0px;
+        }
+    }
+    @keyframes professionhead {
+        from {
+            top: -200px;
+        }
+        to {
+            top: 0px;
+        }
+    }
+}
+
 @media screen and (max-width: 1022px) and (orientation: landscape) {
     /**Pantallas movil horizontal*/
     html {
@@ -264,6 +377,7 @@ article {
     #proyectoS {
         float: right;
     } */
+    /**animaciones*/
 }
 
 @media screen and (min-width: 1023px) {
