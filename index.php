@@ -44,20 +44,26 @@
             <!--fin barra lateral-->
 
             <section id="meS"> <!--Sobre mi-->
+
                 <article class="me">
-                    <div>
+                    <div id="textome">
                         <h2>Sobre mi</h2>
-                        <p>Realizada mi formación en IES Virgen de la Paz, como Desarrollador de aplicaciones Web, donde he adquirido los conocimientos necesarios para realizar una web desde cero, tanto desde el lado del servidor (Back-end), como en el lado del cliente (Front-end).</p>
-
+                        <p>Realizada mi formación como Desarrollador de aplicaciones Web, donde he adquirido los conocimientos necesarios para realizar una web desde cero, tanto desde el lado del servidor (Back-end), como en el lado del cliente (Front-end).</p>
+                        <br>
                         <p>Desarrollando mi proyecto final sobre un gestor de restaurante el cual podréis probarlo de primera mano desde su enlace correspondiente.</p>
-
+                        <br>
                         <p>realice mis practicas durante 6 meses en ACRELEC, desarrollando la interfaz de los quioscos de pedido de Burger King.</p>
-
+                        <br>
                         <p>Con el objetivo de mejorar mis habilidades y/o adquirir nuevas, siempre estoy en constante aprendizaje, capacitándome con cursos que me enseñan nuevas y punteras tecnologías.</p>
-                        
+                        <br>
                         <p>Por esta razón, actualmente me encuentro cursando una Ingeniería Informática en la Universitat Oberta de Catalunya, para convertirme en un desarrollador mas completo.</p>
                     </div>
-                    
+                
+                </article>
+
+
+                <article id="imgme">
+                    <img src="" alt="imagen ordenador">
                 </article>
             </section>
 

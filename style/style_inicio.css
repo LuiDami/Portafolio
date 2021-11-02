@@ -9,8 +9,8 @@
     --nav: #2c5c97;
     --nav_letras: #ffffff;
     --article: #1b5eca00;
-    --footer: #ffffff;
-    --footer_letras: #2c5c97;
+    --footer: #2c5c97;
+    --footer_letras: #ffffff;
     /* --body: rgba(0, 42, 97, 0.979); */
     --body: rgba(255, 255, 255, 0.979);
     --section: #ffffff;
@@ -156,6 +156,10 @@ article {
     /* width: 90vw;  */
 }
 
+#imgme {
+    display: none;
+}
+
 
 /* .habilidades>lo {
     width: 70vw;
@@ -291,6 +295,9 @@ article {
 }
 
 @media screen and (max-width: 1022px) and (orientation: portrait) {
+    #professionhead {
+        color: #2c5c9700;
+    }
     @keyframes namehead {
         from {
             top: -200px;
@@ -302,9 +309,11 @@ article {
     @keyframes professionhead {
         from {
             top: -200px;
+            color: #2c5c9700;
         }
         to {
             top: 0px;
+            color: #2c5c97;
         }
     }
 }
@@ -337,11 +346,12 @@ article {
     #proyectoS,
     #contactoS,
     #meS {
-        width: 80vw;
+        width: 78vw;
         float: right;
+        margin-right: 1.5vw;
     }
     #habilidades fieldset {
-        width: 62vw;
+        width: 60vw;
         padding: 2vh;
     }
     footer {
@@ -404,6 +414,20 @@ article {
     }
     #footerS {
         flex-direction: row;
+    }
+    #meS {
+        justify-content: space-around;
+        flex-direction: row;
+        /* justify-content: flex-end; */
+        align-content: space-between;
+    }
+    .me {
+        width: 40vw;
+    }
+    #imgme {
+        display: inline;
+        width: 40vw;
+        height: 20vh;
     }
 }
 
