@@ -63,7 +63,7 @@
 
 
                 <article id="imgme">
-                    <img src="" alt="imagen ordenador">
+                    <img src="/img/svg/error_web_icon.svg" alt="imagen ordenador">
                 </article>
             </section>
 
@@ -88,6 +88,7 @@
                                 <li>canvas</li>
                                 <li>Angular 8</li>
                             </lo>
+                            <img class="imghabilidades" src="/img/svg/html_icon.svg" alt="javascrip">
                         </fieldset>
                         
                     </article>
@@ -97,6 +98,7 @@
                             <legend><h3>&nbsp;Back-end&nbsp;</h3></legend>
                             <lo>
                                 <li>PHP, POO, MVC</li>
+                                <li>Java, POO</li>
                                 <li>Diseño y gestión de Base de Datos relacionales</li>
                                 <li>SQL</li>
                                 <li>Mysql</li>
@@ -104,6 +106,7 @@
                                 <li>PL/SQL</li>
                                 <li>Servidor Web Apache (Xampp)</li>
                             </lo>
+                            <img class="imghabilidades"  src="/img/svg/php_icon.svg" alt="php">
                         </fieldset>
                         
                     </article>
@@ -112,7 +115,6 @@
                         <fieldset>
                             <legend><h3>&nbsp;Mas habilidades&nbsp;</h3></legend>
                             <lo>
-                                <li>Java, POO</li>
                                 <li>Service Workers</li>
                                 <li>Photoshop</li>
                                 <li>GIMP</li>
@@ -123,6 +125,7 @@
                                 <li>Git</li>
                                 <li>Gitflow y  ciclo de vida del software</li>
                             </lo>
+                            <img class="imghabilidades" src="/img/svg/habilidad_icon.svg" alt="habilidad">
                         </fieldset>
                         
                     </article>
@@ -184,25 +187,25 @@
         <footer ><!--pie de paguina-->
             <div id="landscape"></div>
             <div id="footerS">
-                <article>
-                    <h3><a href="tel:+34662524204">telf: +34 662524204</a></h3>
+                <article class="articlefooter">
+                    <h3><a href="tel:+34662524204"><img class="fottericon" src="/img/svg/telefono_icon.svg" alt="telefono"></a></h3>
                 </article>
 
-                <article>
-                    <h3><a href="https://api.whatsapp.com/send?phone=+34662524204" target="_blank">Contacta por WhatsApp</a></h3>
+                <article class="articlefooter">
+                    <h3><a href="https://api.whatsapp.com/send?phone=+34662524204" target="_blank"><img class="fottericon" src="/img/svg/whatsapp_icon.svg" alt="whatsapp"></a></h3>
                 </article>
 
-                <article>
-                    <h3><a href="mailto:luidami10@gmail.com">email: luidami10@gmail.com</a></h3>
+                <article class="articlefooter">
+                    <h3><a href="mailto:luidami10@gmail.com"><a href="https://api.whatsapp.com/send?phone=+34662524204" target="_blank"><img class="fottericon" src="/img/svg/gmail_icon.svg" alt="gmail"></a></h3>
                 </article>
 
-                <article>
+                <article class="articlefooter">
                     <h3><a href="https://www.linkedin.com/in/luis-damian-developer/" 
-                    target="_blank">linkedin</a></h3>
+                    target="_blank"><img class="fottericon" src="/img/svg/linkedin_icon.svg" alt="linkedin"></a></h3>
                 </article>
 
-                <article>
-                    <h3><a href="https://github.com/LuiDami" target="_blank">github</a></h3>
+                <article class="articlefooter">
+                    <h3><a href="https://github.com/LuiDami" target="_blank"><img class="fottericon" src="/img/svg/github_icon.svg" alt="github"></a></h3>
                 </article>
             </div>
 

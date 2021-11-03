@@ -61,6 +61,7 @@ nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 nav ul {
@@ -93,15 +94,31 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     background-color: var(--footer);
     color: var(--footer_letras);
     border: 3px solid var(--footer_letras);
+    height: 17vh;
+}
+
+.articlefooter {
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 #footerS a {
     text-decoration: none;
     color: var(--footer_letras)
+}
+
+.fottericon {
+    width: 5vh;
+    position: relative;
+}
+
+.fottericon:hover {
+    width: 7vh;
 }
 
 
@@ -181,6 +198,15 @@ article {
     width: 85vw;
     padding: 2vw;
     border: 3px solid var(--section_letras);
+    position: relative;
+}
+
+.imghabilidades {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10%;
+    margin: 3%;
 }
 
 #contactar {
@@ -316,6 +342,9 @@ article {
             color: #2c5c97;
         }
     }
+    #footerS {
+        height: 10vh;
+    }
 }
 
 @media screen and (max-width: 1022px) and (orientation: landscape) {
@@ -365,6 +394,12 @@ article {
         width: 81.5vw;
         float: right;
     }
+    .fottericon {
+        width: 5vw;
+    }
+    .fottericon:hover {
+        width: 7vw;
+    }
     #landscape {
         /**usamos este flag para poder colocar el footer bien en pantallas moviles horizontal*/
         width: 15vw;
@@ -390,7 +425,7 @@ article {
     /**animaciones*/
 }
 
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1200px) {
     /**moviles y tablets vertical*/
     html {
         font-size: 2.5vh;
@@ -427,7 +462,12 @@ article {
     #imgme {
         display: inline;
         width: 40vw;
-        height: 20vh;
+    }
+    .fottericon {
+        width: 5vw;
+    }
+    .fottericon:hover {
+        width: 7vw;
     }
 }
 
@@ -439,6 +479,10 @@ article {
     .habilidades,
     .proyectos {
         width: 30vw;
+    }
+    #habilidades fieldset {
+        width: 25vw;
+        padding: 2vw;
     }
     #contactar {
         width: 30vw;
