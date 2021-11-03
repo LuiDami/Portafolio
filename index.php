@@ -23,15 +23,15 @@
                 <img class="collage" src="/img/svg/header/bootstrap_icon.svg" alt="">
             </div>
             <div id="headercentral">
-                <div><h1 id="namehead">Hola soy Luis Damian</h1></div>
-                <div><h1 id="professionhead">Desarrollador Web</h1></div>
-                <div><p id="developer">Front-End y Back-End</p></div>
+                <div><h1 class="textoHeader" id="namehead">Hola soy Luis Damian</h1></div>
+                <div><h1 class="textoHeader" id="professionhead">Desarrollador Web</h1></div>
+                <div><p class="textoHeader" id="developer">Front-End y Back-End</p></div>
                 <div>
-                    <a id="contachead" href="#contactoS">
+                    <a class="textoHeader" id="contachead" href="#contactoS">
                         <h2>CONTÁCTAME</h2>
                     </a>
                 </div>
-                <div><h2 id="descargarcv">Descargar cv</h2></div>
+                <div><h2 class="textoHeader" id="descargarcv">Descargar cv</h2></div>
             </div>
             <div class="laterales_header"  id="laterales_headerr">
                 <img class="collage" src="/img/svg/header/java_icon.svg" alt="">
@@ -156,16 +156,18 @@
 
                 <div id="proyectos">
                     <article class="proyectos">
-                        <a href="https://www.luisdamian.com/restaurante" target="_blank"><img src="" alt="Proyecto restaurante"></a>
+                        <p>Gestor de restaurante</p><br>
+                        <a href="https://www.luisdamian.com/restaurante" target="_blank"><img class="proyecto" src="/img/jpg/restaurante.JPG" alt=""></a>
                     </article>
 
                     <article class=proyectos>
-                        <a href="" target="_blank"><img src="" alt="Otro proyecto 2"></a>
+                        <p>Portafolio</p><br>
+                        <a href="https://www.luisdamian.com/" target="_blank"><img class="proyecto" src="/img/jpg/portafolio.JPG" alt=""></a>
                     </article>
 
-                    <article class=proyectos>
+                    <!-- <article class=proyectos>
                         <a href="" target="_blank"><img src="" alt="Otro proyecto 3"></a>
-                    </article>
+                    </article> -->
                 </div>
                 
             </section> 
