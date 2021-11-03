@@ -30,7 +30,7 @@
                     <a id="contachead" href="#contactoS">
                         <h2>CONTÁCTAME</h2>
                     </a>
-                </div>/
+                </div>
                 <div><h2 id="descargarcv">Descargar cv</h2></div>
             </div>
             <div class="laterales_header"  id="laterales_headerr">
