@@ -17,12 +17,9 @@
                 <img class="collage" src="/img/svg/header/masmenos_icon.svg" alt="">
                 <img class="collage" src="/img/svg/header/angular_icon.svg" alt="">
                 <img class="collage" src="/img/svg/header/javascript_icon.svg" alt="">
-                
                 <img class="collage" src="/img/svg/header/css_icon.svg" alt="">
-                
                 <img class="collage" src="/img/svg/header/html_icon.svg" alt="">
                 <img class="collage" src="/img/svg/header/jquery_icon.svg" alt="">
-                
                 <img class="collage" src="/img/svg/header/bootstrap_icon.svg" alt="">
             </div>
             <div id="headercentral">
@@ -216,7 +213,7 @@
                 </article>
 
                 <article class="articlefooter">
-                    <h3><a href="mailto:luidami10@gmail.com"><a href="https://api.whatsapp.com/send?phone=+34662524204" target="_blank"><img class="fottericon" src="/img/svg/gmail_icon.svg" alt="gmail"></a></h3>
+                    <h3><a href="mailto:luidami10@gmail.com"><img class="fottericon" src="/img/svg/gmail_icon.svg" alt="gmail"></a></h3>
                 </article>
 
                 <article class="articlefooter">
