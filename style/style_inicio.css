@@ -38,8 +38,8 @@ header {
     background-color: var(--header);
     /* text-align: center; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     color: var(--header_letras);
     border: 3px solid var(--header_letras);
@@ -47,9 +47,33 @@ header {
     background: radial-gradient(#ffffff, #acc8e9, var(--header_letras));
 }
 
+#headercentral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 header a {
     text-decoration: none;
     color: var(--header_letras)
+}
+
+.laterales_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    animation-name: laterales_header;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.collage {
+    width: 5vw;
 }
 
 nav {
@@ -80,14 +104,6 @@ nav a {
 .contenedor {
     min-height: 100vh;
 }
-
-
-/*
-footer {
-     min-height: 10vh;
-    margin: 0.5vh;
-    padding: 1vh; 
-}*/
 
 #footerS {
     background-color: var(--footer);
@@ -121,23 +137,7 @@ footer {
     width: 7vh;
 }
 
-
-/*contenedor*/
-
-
-/* aside { no tenemos aside
-    float: left;
-    height: 98%;
-    width: 20vh;
-    margin: 0.5vh;
-    padding: 1vh;
-    padding-top: 0.5vh;
-    background-color: skyblue;
-} */
-
 section {
-    /* height: 100%;
-    overflow: hidden; */
     margin: 0.5vh;
     padding: 1vh;
     min-height: 83.5vh;
@@ -145,8 +145,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* display: flex;
-    flex-direction: column; */
     color: var(--section_letras);
     border: 3px solid var(--section_letras);
 }
@@ -170,17 +168,15 @@ article {
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* width: 90vw;  */
 }
 
 #imgme {
     display: none;
 }
 
-
-/* .habilidades>lo {
-    width: 70vw;
-} */
+#monitorhtml_icon {
+    width: 80%;
+}
 
 .me>* {
     margin: 6vh;
@@ -189,7 +185,6 @@ article {
 #habilidades,
 #proyectos {
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: column;
 }
 
@@ -271,6 +266,50 @@ article {
     color: #2c5c9700;
 }
 
+#laterales_headerr {
+    position: relative;
+    animation-name: laterales_headerr;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    visibility: hidden;
+}
+
+#laterales_headerl {
+    position: relative;
+    animation-name: laterales_headerl;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    visibility: hidden;
+}
+
+@keyframes laterales_headerl {
+    from {
+        left: -20vw;
+        visibility: visible;
+        /* color: #2c5c9700; */
+    }
+    to {
+        left: 0px;
+        visibility: visible;
+        /* color: #2c5c97; */
+    }
+}
+
+@keyframes laterales_headerr {
+    from {
+        right: -20vw;
+        visibility: visible;
+        /* color: #2c5c9700; */
+    }
+    to {
+        right: 0px;
+        visibility: visible;
+        /* color: #2c5c97; */
+    }
+}
+
 @keyframes namehead {
     from {
         left: -200px;
@@ -321,6 +360,21 @@ article {
 }
 
 @media screen and (max-width: 1022px) and (orientation: portrait) {
+    /**pantalla moviles en vertical*/
+    header {
+        flex-direction: column;
+    }
+    .laterales_header {
+        flex-direction: row;
+        width: 100%;
+    }
+    .collage {
+        width: 5vh;
+    }
+    #footerS {
+        height: 10vh;
+    }
+    /**animacion*/
     #professionhead {
         color: #2c5c9700;
     }
@@ -342,8 +396,29 @@ article {
             color: #2c5c97;
         }
     }
-    #footerS {
-        height: 10vh;
+    @keyframes laterales_headerl {
+        from {
+            left: -100vw;
+            visibility: visible;
+            /* color: #2c5c9700; */
+        }
+        to {
+            left: 0px;
+            visibility: visible;
+            /* color: #2c5c97; */
+        }
+    }
+    @keyframes laterales_headerr {
+        from {
+            right: -100vw;
+            visibility: visible;
+            /* color: #2c5c9700; */
+        }
+        to {
+            right: 0px;
+            visibility: visible;
+            /* color: #2c5c97; */
+        }
     }
 }
 

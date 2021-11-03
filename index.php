@@ -13,19 +13,38 @@
 
 
         <header>
-
-            <div><h1 id="namehead">Hola soy Luis Damian</h1></div>
-            <div><h1 id="professionhead">Desarrollador Web</h1></div>
-            <div><p id="developer">Front-End y Back-End</p></div>
-            <div>
-                <a id="contachead" href="#contactoS">
-                    <h2>CONTÁCTAME</h2>
-                </a>
+            <div class="laterales_header" id="laterales_headerl">
+                <img class="collage" src="/img/svg/header/masmenos_icon.svg" alt="">
+                <img class="collage" src="/img/svg/header/angular_icon.svg" alt="">
+                <img class="collage" src="/img/svg/header/javascript_icon.svg" alt="">
+                
+                <img class="collage" src="/img/svg/header/css_icon.svg" alt="">
+                
+                <img class="collage" src="/img/svg/header/html_icon.svg" alt="">
+                <img class="collage" src="/img/svg/header/jquery_icon.svg" alt="">
+                
+                <img class="collage" src="/img/svg/header/bootstrap_icon.svg" alt="">
             </div>
-            <div><h2 id="descargarcv">Descargar cv</h2></div>
-            
-            
-
+            <div id="headercentral">
+                <div><h1 id="namehead">Hola soy Luis Damian</h1></div>
+                <div><h1 id="professionhead">Desarrollador Web</h1></div>
+                <div><p id="developer">Front-End y Back-End</p></div>
+                <div>
+                    <a id="contachead" href="#contactoS">
+                        <h2>CONTÁCTAME</h2>
+                    </a>
+                </div>/
+                <div><h2 id="descargarcv">Descargar cv</h2></div>
+            </div>
+            <div class="laterales_header"  id="laterales_headerr">
+                <img class="collage" src="/img/svg/header/java_icon.svg" alt="">
+                <img class="collage" src="/img/svg/header/php_icon.svg" alt="">
+                <img class="collage" src="/img/svg/header/sql_icon.svg" alt="">
+                <img class="collage" src="/img/svg/header/mysql_icon.svg" alt="">
+                <img class="collage" src="/img/svg/header/oracle_icon.svg" alt="">
+                <img class="collage" src="/img/svg/header/json_icon.svg" alt="">
+                <img class="collage" src="/img/svg/header/etiqueta_icon.svg" alt="">
+            </div> 
         </header>
         <p id="sobremi"></p>
         <nav>
@@ -48,6 +67,7 @@
                 <article class="me">
                     <div id="textome">
                         <h2>Sobre mi</h2>
+                        <br>
                         <p>Realizada mi formación como Desarrollador de aplicaciones Web, donde he adquirido los conocimientos necesarios para realizar una web desde cero, tanto desde el lado del servidor (Back-end), como en el lado del cliente (Front-end).</p>
                         <br>
                         <p>Desarrollando mi proyecto final sobre un gestor de restaurante el cual podréis probarlo de primera mano desde su enlace correspondiente.</p>
@@ -63,7 +83,7 @@
 
 
                 <article id="imgme">
-                    <img src="/img/svg/error_web_icon.svg" alt="imagen ordenador">
+                    <img id="monitorhtml_icon" src="/img/svg/monitorhtml_icon.svg" alt="imagen ordenador">
                 </article>
             </section>
 
