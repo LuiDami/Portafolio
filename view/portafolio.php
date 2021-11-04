@@ -65,11 +65,11 @@
                     <div id="textome">
                         <h2>Sobre mi</h2>
                         <br>
-                        <p>Realizada mi formación como Desarrollador de aplicaciones Web, donde he adquirido los conocimientos necesarios para realizar una web desde cero, tanto desde el lado del servidor (Back-end), como en el lado del cliente (Front-end).</p>
+                        <p>Lleve a cabo mi formación como Desarrollador de aplicaciones Web, donde he adquirido los conocimientos necesarios para realizar una web desde cero, tanto desde el lado del servidor (Back-end), como en el lado del cliente (Front-end).</p>
                         <br>
                         <p>Desarrollando mi proyecto final sobre un gestor de restaurante el cual podréis probarlo de primera mano desde su enlace correspondiente.</p>
                         <br>
-                        <p>realice mis practicas durante 6 meses en ACRELEC, desarrollando la interfaz de los quioscos de pedido de Burger King.</p>
+                        <p>Realice mis practicas durante 6 meses en ACRELEC, desarrollando la interfaz de los quioscos de pedido de Burger King.</p>
                         <br>
                         <p>Con el objetivo de mejorar mis habilidades y/o adquirir nuevas, siempre estoy en constante aprendizaje, capacitándome con cursos que me enseñan nuevas y punteras tecnologías.</p>
                         <br>
@@ -175,22 +175,22 @@
             <section id="contactoS"> <!-- Contactame -->
                 
                 <article class="contacto">
-                    <form action="" method="post" id="contacto" name="contacto">
+                    <!-- <form action="" method="post" id="contacto" name="contacto"> -->
                         <fieldset id="contactar">
                             <legend><h2>&nbsp;Contacto&nbsp;</h2></legend>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" name="nombre" id="nombre">
+                            <label for="nombreCorreo">Nombre</label>
+                            <input type="text" name="nombreCorreo" id="nombreCorreo">
 
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <label for="emailCorreo">Email</label>
+                            <input type="email" name="emailCorreo" id="emailCorreo">
 
-                            <label for="mensaje">Mensaje</label>
-                            <input type="text" name="mensaje" id="mensaje">
-
-                            <input type="submit" value="enviar" name="boton" id="boton" />
-
+                            <label for="mensajeCorreo">Mensaje</label>
+                            <textarea name="mensajeCorreo" id="mensajeCorreo" cols="30" rows="10"></textarea>
+                            <button onclick='enviarCorreo(document.getElementById("nombreCorreo").value,document.getElementById("emailCorreo").value,document.getElementById("mensajeCorreo").value)' class='button_eliminar'>Enviar</button>
+                            <!-- <input type="submit" value="enviar" name="boton" id="boton" /> -->
+                            <p id="respuestaCorreo">actualmente fuera de servicio, puedes contactar con los iconos de la parte inferior</p>
                         </fieldset>
-                    </form>
+                    <!-- </form> -->
 
                 </article>
             </section>
@@ -235,11 +235,10 @@
         
 
         <!--Javascrip-->
-        <script>
-        </script>
+        <script src="./Js/jquery-3.5.1.min.js"></script>
+        <script src="./Js/funciones.js"></script>
         
 
      </body> 
      
  </html>
- 
