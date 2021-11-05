@@ -69,7 +69,7 @@
                         <br>
                         <p>Desarrollando mi proyecto final sobre un gestor de restaurante el cual podréis probarlo de primera mano desde su enlace correspondiente.</p>
                         <br>
-                        <p>Realice mis practicas durante 6 meses en ACRELEC, desarrollando la interfaz de los quioscos de pedido de Burger King.</p>
+                        <p>Realice mis practicas durante 6 meses en ACRELEC, desarrollando la interfaz de los Kioscos de autoservicio para Burger King.</p>
                         <br>
                         <p>Con el objetivo de mejorar mis habilidades y/o adquirir nuevas, siempre estoy en constante aprendizaje, capacitándome con cursos que me enseñan nuevas y punteras tecnologías.</p>
                         <br>
