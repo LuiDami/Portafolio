@@ -282,9 +282,9 @@ article {
     color: #2c5c9700;
 }
 
-#descargarcv {
+#conoceme {
     position: relative;
-    animation-name: descargarcv;
+    animation-name: conoceme;
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 2.5s;
@@ -378,7 +378,7 @@ article {
     }
 }
 
-@keyframes descargarcv {
+@keyframes conoceme {
     from {
         top: +200px;
         color: var(--header_letras);

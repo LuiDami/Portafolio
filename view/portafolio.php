@@ -31,7 +31,7 @@
                         <h2>CONTÁCTAME</h2>
                     </a>
                 </div>
-                <div><h2 class="textoHeader" id="descargarcv">Descargar cv</h2></div>
+                <div><a href="#sobremi"><h2 class="textoHeader" id="conoceme">Conóceme</h2></a></div>
             </div>
             <div class="laterales_header"  id="laterales_headerr">
                 <img class="collage" src="/img/svg/header/java_icon.svg" alt="">
@@ -65,7 +65,7 @@
                     <div id="textome">
                         <h2>Sobre mi</h2>
                         <br>
-                        <p>Lleve a cabo mi formación como Desarrollador de aplicaciones Web, donde he adquirido los conocimientos necesarios para realizar una web desde cero, tanto desde el lado del servidor (Back-end), como en el lado del cliente (Front-end).</p>
+                        <p>He realizado formación, como Desarrollador de aplicaciones Web, donde he adquirido los conocimientos necesarios para realizar una web desde cero, tanto desde el lado del servidor (Back-end), como en el lado del cliente (Front-end).</p>
                         <br>
                         <p>Desarrollando mi proyecto final sobre un gestor de restaurante el cual podréis probarlo de primera mano desde su enlace correspondiente.</p>
                         <br>
@@ -188,7 +188,7 @@
                             <textarea name="mensajeCorreo" id="mensajeCorreo" cols="30" rows="10"></textarea>
                             <button onclick='enviarCorreo(document.getElementById("nombreCorreo").value,document.getElementById("emailCorreo").value,document.getElementById("mensajeCorreo").value)' class='button_eliminar'>Enviar</button>
                             <!-- <input type="submit" value="enviar" name="boton" id="boton" /> -->
-                            <p id="respuestaCorreo">actualmente fuera de servicio, puedes contactar con los iconos de la parte inferior</p>
+                            <p id="respuestaCorreo">actualmente fuera de servicio, puedes contactar por los iconos que puedes encontrar en la parte inferior</p>
                         </fieldset>
                     <!-- </form> -->
 
