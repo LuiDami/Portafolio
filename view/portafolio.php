@@ -237,6 +237,9 @@
         <!--Javascrip-->
         <script src="./Js/jquery-3.5.1.min.js"></script>
         <script src="./Js/funciones.js"></script>
+        <script>
+            scrollLento(1000);
+        </script>
         
 
      </body> 

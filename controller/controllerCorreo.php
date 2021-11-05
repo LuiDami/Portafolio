@@ -15,7 +15,7 @@
 
 
  if(isset($_POST["emailCorreo"])){
-    $name= $_POST["nameCorreo"];
+    $name= $_POST["nombreCorreo"];
     $email= $_POST["emailCorreo"];
     $mensaje= $_POST["mensajeCorreo"];
     $asunto="prueba";
@@ -23,8 +23,10 @@
     $header="Reply-To: luidami10@gmail.com"."\r\n";
     $header="X-Mailer: PHP".phpversion();
     $mail= mail($email,$asunto,$mensaje,$header);
-    if(true){
+    if($mail){
         echo"mensaje enviado correctamente";
+    }else{
+        echo"el mensaje no ha podido ser enviado";
     }
     
  }
