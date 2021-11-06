@@ -291,6 +291,14 @@ article {
     color: #2c5c9700;
 }
 
+#contachead:hover {
+    font-size: 110%;
+}
+
+#conoceme:hover {
+    font-size: 160%;
+}
+
 #laterales_headerr {
     position: relative;
     animation-name: laterales_headerr;
