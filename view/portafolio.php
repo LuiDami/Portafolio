@@ -160,12 +160,12 @@
                         <a href="https://www.luisdamian.com/restaurante" target="_blank"><img class="proyecto" src="/img/jpg/restaurante.JPG" alt=""></a>
                     </article>
 
-                    <article class=proyectos>
+                    <article class="proyectos">
                         <p>Portafolio</p><br>
                         <a href="https://www.luisdamian.com/" target="_blank"><img class="proyecto" src="/img/jpg/portafolio.JPG" alt=""></a>
                     </article>
 
-                    <!-- <article class=proyectos>
+                    <!-- <article class="proyectos">
                         <a href="" target="_blank"><img src="" alt="Otro proyecto 3"></a>
                     </article> -->
                 </div>
