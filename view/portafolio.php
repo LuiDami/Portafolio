@@ -175,7 +175,7 @@
             <section id="contactoS"> <!-- Contactame -->
                 
                 <article class="contacto">
-                    <!-- <form action="" method="post" id="contacto" name="contacto"> -->
+                    
                         <fieldset id="contactar">
                             <legend><h2>&nbsp;Contacto&nbsp;</h2></legend>
                             <label for="nombreCorreo">Nombre *</label>
@@ -193,8 +193,9 @@
                             
                             <p id="respuestaCorreo"></p>
                         </fieldset>
-                    <!-- </form> -->
-
+                        <div id="cv">
+                            <p>Descargar curriculum</p>
+                        </div>
                 </article>
             </section>
 

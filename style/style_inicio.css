@@ -21,7 +21,7 @@
     padding: 0px;
     margin: 0px;
     border-radius: 5px;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -31,8 +31,11 @@ html {
 
 /*Estructura principal*/
 
+
+/**header*/
+
 header {
-    height: 96vh;
+    height: 100vh;
     margin: 0.5vh;
     padding: 1vh;
     background-color: var(--header);
@@ -85,6 +88,7 @@ header a {
 }
 
 .collage {
+    /**imagenes laterales de header*/
     width: 5vw;
 }
 
@@ -100,6 +104,9 @@ nav {
     z-index: 999;
 }
 
+
+/**nav*/
+
 nav ul {
     display: flex;
     justify-content: space-around;
@@ -113,9 +120,153 @@ nav a {
     color: var(--nav_letras)
 }
 
+
+/**dentro de contenedor*/
+
 .contenedor {
     min-height: 100vh;
 }
+
+section {
+    margin: 0.5vh;
+    padding: 1vh;
+    min-height: 89vh;
+    background-color: var(--section);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--section_letras);
+    border: 3px solid var(--section_letras);
+}
+
+article {
+    margin: 0.5vh;
+    padding: 1vh;
+    background-color: var(--article);
+}
+
+.habilidades,
+.proyectos,
+.contacto {
+    width: 90vw;
+}
+
+.proyectos,
+.contacto,
+.me {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70vw;
+}
+
+#meS {
+    justify-content: center;
+}
+
+#imgme {
+    /**imagen sobre mi*/
+    display: none;
+}
+
+#monitorhtml_icon {
+    /**esta dentro de #imgme*/
+    width: 80%;
+}
+
+#habilidades,
+#proyectos {
+    display: flex;
+    flex-direction: column;
+}
+
+#habilidades fieldset {
+    list-style: none;
+    width: 85vw;
+    padding: 2vw;
+    border: 3px solid var(--section_letras);
+    position: relative;
+}
+
+.imghabilidades {
+    /**miniatura en habilidades*/
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 10%;
+    margin: 3%;
+}
+
+.proyectos {
+    list-style: none;
+    /* width: 85vw; */
+    padding: 2vw;
+    border: 3px solid var(--section_letras);
+    position: relative;
+    background-color: #0d6de21a;
+}
+
+.proyecto {
+    width: 100%;
+}
+
+#contactoS {
+    /**restal la altura del header y del footer*/
+    min-height: 79vh;
+}
+
+#contactar {
+    /**formulario contacto*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 3px solid var(--section_letras);
+    width: 70vw;
+    height: 62vh;
+    padding: 2vh;
+}
+
+#contactar textarea {
+    height: 20vh;
+    width: 100%;
+    font-size: 120%;
+    padding: 2vw;
+}
+
+#contactar input {
+    height: 2.5vh;
+    width: 100%;
+    font-size: 100%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#contactar label {
+    margin-top: 1.5vh;
+}
+
+#contactar #button_enviar {
+    margin-top: 2vh;
+    height: 5vh;
+    font-size: 120%;
+}
+
+#contactar #respuestaCorreo {
+    margin-top: 1vh;
+}
+
+#cv {
+    display: flex;
+    justify-content: center;
+    border: 3px solid var(--section_letras);
+    align-items: center;
+    width: 70vw;
+    height: 10vh;
+    margin-top: 2vh;
+}
+
+
+/**footer*/
 
 #footerS {
     background-color: var(--footer);
@@ -147,105 +298,6 @@ nav a {
 
 .fottericon:hover {
     width: 7vh;
-}
-
-section {
-    margin: 0.5vh;
-    padding: 1vh;
-    min-height: 83.5vh;
-    background-color: var(--section);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--section_letras);
-    border: 3px solid var(--section_letras);
-}
-
-article {
-    margin: 0.5vh;
-    padding: 1vh;
-    background-color: var(--article);
-}
-
-.habilidades,
-.proyectos,
-.contacto,
-.me {
-    width: 90vw;
-}
-
-.proyectos,
-.contacto,
-.me {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-#imgme {
-    display: none;
-}
-
-#monitorhtml_icon {
-    width: 80%;
-}
-
-.me>* {
-    margin: 6vh;
-}
-
-#habilidades,
-#proyectos {
-    display: flex;
-    flex-direction: column;
-}
-
-#habilidades fieldset {
-    list-style: none;
-    width: 85vw;
-    padding: 2vw;
-    border: 3px solid var(--section_letras);
-    position: relative;
-}
-
-.proyectos {
-    list-style: none;
-    /* width: 85vw; */
-    padding: 2vw;
-    border: 3px solid var(--section_letras);
-    position: relative;
-    background-color: #0d6de21a;
-}
-
-.proyecto {
-    width: 100%;
-}
-
-.imghabilidades {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 10%;
-    margin: 3%;
-}
-
-#contactar {
-    /**formulario contacto*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 65vw;
-    height: 50vh;
-    padding: 2vh;
-}
-
-
-/* .contacto {
-    height: 60vh;
-} */
-
-#contactoS {
-    min-height: 67vh;
 }
 
 
@@ -454,14 +506,14 @@ article {
         height: 4.3vw;
     }
     nav {
-        height: 95vh;
+        height: 100vh;
         width: 15vw;
-        margin: 0.5vw;
+        margin-left: 0.5vw;
         padding: 1vw;
         text-align: center;
         position: -webkit-sticky;
         position: sticky;
-        top: 1vh;
+        /* top: 1vh; */
         float: left;
     }
     nav ul {
@@ -476,13 +528,52 @@ article {
     #proyectoS,
     #contactoS,
     #meS {
-        width: 78vw;
+        width: 82vw;
+        min-height: 99vh;
         float: right;
         margin-right: 1.5vw;
     }
     #habilidades fieldset {
         width: 60vw;
         padding: 2vh;
+    }
+    #contactoS {
+        /* height: 84vh; */
+    }
+    #contactar {
+        /**formulario contacto*/
+        width: 65vw;
+        min-height: 75vh;
+        padding: 2vw;
+    }
+    #contactar textarea {
+        height: 10vh;
+        width: 100%;
+        font-size: 100%;
+        padding: 2vw;
+    }
+    #contactar input {
+        height: 2.5vw;
+        width: 100%;
+        font-size: 100%;
+        padding-left: 2vh;
+        padding-right: 2vh;
+    }
+    #contactar label {
+        margin-top: 1.5vh;
+    }
+    #contactar #button_enviar {
+        margin-top: 2vh;
+        height: 7vh;
+        font-size: 120%;
+    }
+    #contactar #respuestaCorreo {
+        margin-top: 1vh;
+    }
+    #cv {
+        width: 65vw;
+        height: 10vh;
+        margin-top: 2vh;
     }
     footer {
         display: flex;
@@ -492,8 +583,9 @@ article {
         width: 100vw;
     }
     #footerS {
-        width: 81.5vw;
+        width: 82.5vw;
         float: right;
+        margin-right: 1vw;
     }
     .fottericon {
         width: 5vw;
@@ -539,8 +631,27 @@ article {
         width: 30vw;
         padding: 2vw;
     }
+    .contacto {
+        /* height: 40vh; */
+    }
     #contactar {
-        width: 40vw;
+        width: 50vw;
+        min-height: 60vh;
+    }
+    #contactar input {
+        height: 4vh;
+        width: 100%;
+        font-size: 100%;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    #contactar textarea {
+        height: 10vh;
+        padding: 1vw;
+    }
+    #cv {
+        width: 50vw;
+        height: 5vh;
     }
     #footerS {
         flex-direction: row;
@@ -562,11 +673,17 @@ article {
         width: 5vw;
     }
     .fottericon:hover {
-        width: 7vw;
+        width: 6.4vw;
     }
 }
 
 @media screen and (max-width: 1366px) {
+    .fottericon {
+        width: 3vw;
+    }
+    .fottericon:hover {
+        width: 4.4vw;
+    }
     @keyframes laterales_headerl {
         from {
             top: -100vh;
@@ -602,13 +719,26 @@ article {
         width: 25vw;
         padding: 2vw;
     }
-    #contactar {
+    /* .contacto {
+        width: 50vw;
+    } */
+    /* #contactar {
         width: 30vw;
     }
-    .contacto {
-        width: 40vw;
-    }
+    #cv {
+        width: 50vw;
+        height: 5vh;
+    } */
     footer {
         flex-direction: row;
+    }
+    #footerS {
+        height: 12vh;
+    }
+    .fottericon {
+        width: 3vw;
+    }
+    .fottericon:hover {
+        width: 4.4vw;
     }
 }
