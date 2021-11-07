@@ -178,17 +178,20 @@
                     <!-- <form action="" method="post" id="contacto" name="contacto"> -->
                         <fieldset id="contactar">
                             <legend><h2>&nbsp;Contacto&nbsp;</h2></legend>
-                            <label for="nombreCorreo">Nombre</label>
-                            <input type="text" name="nombreCorreo" id="nombreCorreo">
+                            <label for="nombreCorreo">Nombre *</label>
+                            <input type="text" name="nombreCorreo" id="nombreCorreo" title="Campo obligatorio">
 
-                            <label for="emailCorreo">Email</label>
-                            <input type="email" name="emailCorreo" id="emailCorreo">
+                            <label for="emailCorreo">Email *</label>
+                            <input type="email" name="emailCorreo" id="emailCorreo" title="Tiene que ser un formato de email valido">
+
+                            <label for="asuntoCorreo">Asunto *</label>
+                            <input type="text" name="asuntoCorreo" id="asuntoCorreo" title="Campo obligatorio">
 
                             <label for="mensajeCorreo">Mensaje</label>
-                            <textarea name="mensajeCorreo" id="mensajeCorreo" cols="30" rows="10"></textarea>
-                            <button onclick='enviarCorreo(document.getElementById("nombreCorreo").value,document.getElementById("emailCorreo").value,document.getElementById("mensajeCorreo").value)' class='button_eliminar'>Enviar</button>
-                            <!-- <input type="submit" value="enviar" name="boton" id="boton" /> -->
-                            <p id="respuestaCorreo">actualmente fuera de servicio, puedes contactar por los iconos que puedes encontrar en la parte inferior</p>
+                            <textarea name="mensajeCorreo" id="mensajeCorreo" cols="20" rows="5" title="Mínimo 10 caracteres"></textarea>
+                            <button id="button_enviar" class='button_enviar'>Enviar</button>
+                            
+                            <p id="respuestaCorreo"></p>
                         </fieldset>
                     <!-- </form> -->
 
@@ -231,17 +234,10 @@
             
             
         </footer>
-        
-        
-
         <!--Javascrip-->
-        <script src="./Js/jquery-3.5.1.min.js"></script>
-        <script src="./Js/funciones.js"></script>
-        <script>
-            scrollLento(1000);
-        </script>
-        
-
+        <script src="/js/jquery-3.5.1.min.js"></script>
+        <script src="/js/funciones.js"></script>
+        <script src="/js/portafolio.js"></script>
      </body> 
      
  </html>

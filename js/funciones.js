@@ -150,7 +150,7 @@ function nAleatorio(max, min) {
     return Math.floor(Math.random() * ((max + 1) - min) + min);
 } //genera numero aleatorio entre max y min
 
-function enviarCorreo(nombreCorreo, emailCorreo, mensajeCorreo) {
+function enviarCorreo(nombreCorreo, emailCorreo, asuntoCorreo, mensajeCorreo) {
     $.ajax({
         url: "controller/controllerCorreo.php",
         type: "POST",
@@ -162,6 +162,7 @@ function enviarCorreo(nombreCorreo, emailCorreo, mensajeCorreo) {
              */
             nombreCorreo,
             emailCorreo,
+            asuntoCorreo,
             mensajeCorreo
         },
 
@@ -186,6 +187,32 @@ function enviarCorreo(nombreCorreo, emailCorreo, mensajeCorreo) {
             $("#respuestaCorreo").html(nombreCorreo)
         }
     });
+}
+
+function validarFormularioMail() {
+    nombreCorreo = document.getElementById("nombreCorreo");
+    email = document.getElementById("emailCorreo");
+    asuntoCorreo = document.getElementById("asuntoCorreo");
+    mensajeCorreo = document.getElementById("mensajeCorreo");
+
+    respuestaCorreo = document.getElementById("respuestaCorreo");
+
+
+    emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    if (emailRegex.test(email.value)) {
+        if (nombreCorreo.value.length > 0 && asuntoCorreo.value.length > 0) {
+            if (mensajeCorreo.value.length > 9) {
+                enviarCorreo(nombreCorreo.value, email.value, asuntoCorreo.value, mensajeCorreo.value);
+            } else {
+                respuestaCorreo.innerHTML = "El campo Mensaje tiene que tener un mínimo de 10 caracteres";
+            }
+        } else {
+            respuestaCorreo.innerHTML = "El nombre y el asunto son campos obligatorios";
+        }
+
+    } else {
+        respuestaCorreo.innerHTML = "Formato de correo invalido";
+    }
 }
 
 function scrollLento(tiempo = 800) {
