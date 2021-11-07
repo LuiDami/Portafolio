@@ -452,7 +452,7 @@ article {
     }
 }
 
-@media screen and (max-width: 1022px) and (orientation: portrait) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
     /**pantalla moviles en vertical
     * lo usamos por las animaciones
     */
@@ -499,7 +499,7 @@ article {
     }
 }
 
-@media screen and (max-width: 1022px) and (orientation: landscape) {
+@media screen and (max-width: 1024px) and (orientation: landscape) {
     /**Pantallas movil horizontal*/
     html {
         font-size: 2.1vw;
@@ -611,8 +611,8 @@ article {
     }
 }
 
-@media screen and (min-width: 1023px) {
-    /**moviles y tablets vertical*/
+@media screen and (min-width: 1025px) {
+    /*moviles y tablets vertical*/
     html {
         font-size: 2.5vh;
     }
@@ -632,9 +632,6 @@ article {
     #habilidades fieldset {
         width: 30vw;
         padding: 2vw;
-    }
-    .contacto {
-        /* height: 40vh; */
     }
     #contactar {
         width: 50vw;
@@ -661,7 +658,6 @@ article {
     #meS {
         justify-content: space-around;
         flex-direction: row;
-        /* justify-content: flex-end; */
         align-content: space-between;
     }
     .me {
