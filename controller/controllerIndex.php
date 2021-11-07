@@ -17,6 +17,6 @@
 // if(isset($_POST["nombrePost"])){
     
 // }
-include_once "./view/portafolio.php";
+include_once "./view/portafolio.html";
 
 ?>

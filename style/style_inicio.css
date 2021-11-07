@@ -371,22 +371,22 @@ article {
 
 @keyframes laterales_headerl {
     from {
-        left: -20vw;
+        top: -100vh;
         visibility: visible;
     }
     to {
-        left: 0px;
+        top: 0px;
         visibility: visible;
     }
 }
 
 @keyframes laterales_headerr {
     from {
-        right: -20vw;
+        bottom: -100vh;
         visibility: visible;
     }
     to {
-        right: 0px;
+        bottom: 0px;
         visibility: visible;
     }
 }
@@ -453,7 +453,9 @@ article {
 }
 
 @media screen and (max-width: 1022px) and (orientation: portrait) {
-    /**pantalla moviles en vertical*/
+    /**pantalla moviles en vertical
+    * lo usamos por las animaciones
+    */
     #headercentral div {
         height: 4.3vh;
     }
@@ -674,35 +676,6 @@ article {
     }
     .fottericon:hover {
         width: 6.4vw;
-    }
-}
-
-@media screen and (max-width: 1366px) {
-    .fottericon {
-        width: 3vw;
-    }
-    .fottericon:hover {
-        width: 4.4vw;
-    }
-    @keyframes laterales_headerl {
-        from {
-            top: -100vh;
-            visibility: visible;
-        }
-        to {
-            top: 0px;
-            visibility: visible;
-        }
-    }
-    @keyframes laterales_headerr {
-        from {
-            bottom: -100vh;
-            visibility: visible;
-        }
-        to {
-            bottom: 0px;
-            visibility: visible;
-        }
     }
 }
 
