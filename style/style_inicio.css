@@ -452,7 +452,7 @@ article {
     }
 }
 
-@media screen and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (max-width: 1023px) and (orientation: portrait) {
     /**pantalla moviles en vertical
     * lo usamos por las animaciones
     */
@@ -499,7 +499,7 @@ article {
     }
 }
 
-@media screen and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (max-width: 1023px) and (orientation: landscape) {
     /**Pantallas movil horizontal*/
     html {
         font-size: 2.1vw;
@@ -611,7 +611,7 @@ article {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     /*moviles y tablets vertical*/
     html {
         font-size: 2.5vh;
@@ -632,6 +632,9 @@ article {
     #habilidades fieldset {
         width: 30vw;
         padding: 2vw;
+    }
+    #contactoS {
+        /* height: 10vh; */
     }
     #contactar {
         width: 50vw;
@@ -654,6 +657,7 @@ article {
     }
     #footerS {
         flex-direction: row;
+        height: 15vh;
     }
     #meS {
         justify-content: space-around;
@@ -668,10 +672,10 @@ article {
         width: 40vw;
     }
     .fottericon {
-        width: 5vw;
+        width: 4vw;
     }
     .fottericon:hover {
-        width: 6.4vw;
+        width: 5.4vw;
     }
 }
 
