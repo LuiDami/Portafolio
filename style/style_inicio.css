@@ -231,6 +231,7 @@ article {
     width: 100%;
     font-size: 120%;
     padding: 2vw;
+    resize: none;
 }
 
 #contactar input {
