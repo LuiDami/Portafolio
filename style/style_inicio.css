@@ -145,6 +145,14 @@ article {
     background-color: var(--article);
 }
 
+#proyectosPP {
+    display: block;
+}
+
+#preyectosPG {
+    display: none;
+}
+
 .habilidades,
 .proyectos,
 .contacto {
@@ -679,6 +687,12 @@ article {
     #headercentral div {
         height: 5vh;
     }
+    #proyectosPP {
+        display: none;
+    }
+    #preyectosPG {
+        display: block;
+    }
     .habilidades,
     .proyectos,
     .flip-card {
@@ -744,6 +758,12 @@ article {
     /**portatiles y pantallas grandes*/
     html {
         font-size: 2.5vh;
+    }
+    #proyectosPP {
+        display: none;
+    }
+    #preyectosPG {
+        display: block;
     }
     .habilidades,
     .proyectos,
