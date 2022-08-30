@@ -160,6 +160,12 @@ article {
     width: 70vw;
 }
 
+
+/*********************************/
+
+
+/**************************************************/
+
 #meS {
     justify-content: center;
 }
@@ -200,10 +206,62 @@ article {
 .proyectos {
     list-style: none;
     /* width: 85vw; */
-    padding: 2vw;
-    border: 3px solid var(--section_letras);
+    padding: 0;
     position: relative;
+    /* border: 3px solid var(--section_letras); */
+    /* background-color: #0d6de21a; */
+}
+
+
+/*apartado para card giro en proyectos*/
+
+.flip-card {
+    background-color: transparent;
+    /* width: 100%; */
+    /* height: 100%; */
+    perspective: 1000px;
+    width: 70vw;
+    position: relative;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 2vw;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border: 3px solid var(--section_letras);
     background-color: #0d6de21a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
 }
 
 .proyecto {
@@ -603,7 +661,8 @@ article {
     .habilidades,
     .proyectos,
     .contacto,
-    .me {
+    .me,
+    .flip-card {
         width: 65vw;
     }
     /*termino prueba*/
@@ -621,7 +680,8 @@ article {
         height: 5vh;
     }
     .habilidades,
-    .proyectos {
+    .proyectos,
+    .flip-card {
         width: 40vw;
     }
     #habilidades,
@@ -686,7 +746,8 @@ article {
         font-size: 2.5vh;
     }
     .habilidades,
-    .proyectos {
+    .proyectos,
+    .flip-card {
         width: 30vw;
     }
     #habilidades fieldset {
@@ -715,4 +776,13 @@ article {
     .fottericon:hover {
         width: 4.4vw;
     }
+}
+
+.buttonProyect {
+    text-decoration: none;
+    color: white;
+}
+
+.buttonProyect:hover {
+    font-size: 110%;
 }
