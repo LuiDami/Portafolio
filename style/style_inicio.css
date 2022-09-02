@@ -194,7 +194,8 @@ article {
     flex-direction: column;
 }
 
-#habilidades fieldset {
+#habilidades fieldset,
+#proyectoS fieldset {
     list-style: none;
     width: 85vw;
     padding: 2vw;
@@ -218,6 +219,11 @@ article {
     position: relative;
     /* border: 3px solid var(--section_letras); */
     /* background-color: #0d6de21a; */
+}
+
+.amodmob {
+    text-decoration: none;
+    color: var(--section_letras);
 }
 
 
@@ -770,7 +776,8 @@ article {
     .flip-card {
         width: 30vw;
     }
-    #habilidades fieldset {
+    #habilidades fieldset,
+    #proyectoS fieldset {
         width: 25vw;
         padding: 2vw;
     }
