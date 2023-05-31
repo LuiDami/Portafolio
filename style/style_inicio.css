@@ -721,16 +721,42 @@ article {
         width: 50vw;
         min-height: 60vh;
     }
+    #mensajeCorreo {
+        min-height: 100%;
+    }
     #contactar input {
         height: 4vh;
         width: 100%;
-        font-size: 100%;
         padding-left: 2vw;
         padding-right: 2vw;
     }
-    #contactar textarea {
+    #contactar {
+        width: 85vw;
         height: 10vh;
         padding: 1vw;
+    }
+    #divCorreo {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: space-around;
+        flex-flow: row wrap;
+    }
+    #datosCorreo {
+        width: 25%;
+        height: 70%;
+    }
+    #divMensajeCorreo {
+        width: 70%;
+        height: 70%;
+    }
+    #botonCorreo {
+        width: 95%;
+        height: 20%;
+    }
+    #button_enviar {
+        width: 100%;
+        height: 100%;
     }
     #cv {
         width: 50vw;
