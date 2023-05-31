@@ -241,3 +241,22 @@ function scrollLento(tiempo = 800) {
         });
     });
 }
+
+function descargarArchivo() {
+    var url = 'controller/controllerPdf.php';
+
+    fetch(url)
+        .then(function(response) {
+            return response.blob();
+        })
+        .then(function(blob) {
+            // Crea un enlace temporal
+            var link = document.createElement('a');
+            link.href = window.URL.createObjectURL(blob);
+            link.download = 'CVLuisDamian.pdf';
+            link.click();
+        })
+        .catch(function(error) {
+            console.log('Error en la solicitud: ' + error.message);
+        });
+}
